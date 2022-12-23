@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+html,body,div,form,fieldset,h1,h2,h3,h4,h5,h6,p,blockquote,pre
+{
+    font-size: 100%;
+    font-weight: normal;
+
+    margin: 0;
+    padding: 0;
+
+    vertical-align: baseline;
+
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+table
+{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+th,
+td
+{
+    text-align: left;
+    vertical-align: top;
+}
+
+img
+{
+    border: 0;
+}
+
+/* ----------------------- */
+
+.demo-wrap {
+    overflow: hidden;
+    position: relative;
+}
+  
+.demo-bg {
+  opacity: 0.25;
+  position: absolute;
+  width: 100%;
+
+  z-index: 1;
+}
+
+.demo-content {
+  padding: 3em;
+  z-index: 10;
+
+  position: relative;
+}
+
+.demo-content h1{
+    font-weight: bolder;
+    font-size: 4.5em;
+
+    font-family: 'Racing Sans One', serif;
+}
+
+.demo-content p{
+    font-size: 1.35em;
+}
+
+#testo{
+    z-index: 10;
+    
+    width: 30%;
+    height: 50px;
+}
+
+input[type="text"] {
+    font-size: 24px;
+    color: darkred;
+}
+
+.warning{
+    width: 30%;
+    margin: auto;
+}
+
+.warning div{
+    text-align: start;
+}
+
+.warning div p{
+    opacity: 0.55;
+    margin: 0;
+    font-size: 0.8em;
+}
+
+
+
+/* ----------------------- ----------------- */
+
+#geoco{
+    height: 600px;
+}
+
+/*this is the popup content*/
+.mapboxgl-popup .mapboxgl-popup-content{
+    width: 260px;
+    padding-bottom: 3px;
+}
+
+#content{
+    display: none;
+
+    overflow: auto;
+    height: 600px;
+}
+
+#content::-webkit-scrollbar{
+    width: 4px;
+}
+
+#content::-webkit-scrollbar-thumb{
+    background: #1c0f08;
+    border-radius: 15%;
+}
+
+.direct.active{
+    background-color: #BD9A7A;
+    color: white;
+}
+
+.direct:hover{
+    cursor: pointer;
+}
+
+/*for the directions border */
+.bordo{
+    display: block;
+    height: 1px;
+    width: 60%;
+    background-color: brown;
+
+    margin: auto;
+}
+
+
+/* ----------------------- */
+/*these are for the popUp*/
+.deluchi{
+    display: flex;
+    flex-direction: row;
+}
+
+.nonlist{
+    list-style: none;
+}
+
+.tessera{
+    height: 120px;
+    width: 120px;
+}
+
+/* ------------------ */
+
+.footer {
+    background-color: #1c0f08;
+    color: #d2b7a9;
+    font-size: 65%;
+    bottom: 0;
+    position: fixed;
+}
+
+.footer a{
+    color: #d2b7a9;
+}
+
+.footer a:hover{
+    color: #e8dbd4;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .demo-content h1{
+        font-size: 3.5em;
+    }
+
+    .demo-content p{
+        font-size: 1em;
+    }
+
+    .warning{
+        width: 60%;
+        margin: auto;
+    }
+
+    #content{
+        height: 300px;
+    }
+
+    #geoco{
+        height: 450px;
+    }
+
+    #testo{
+        width: 60%;
+    }
+
+    input[type="text"] {
+        font-size: 16px;
+        color: darkred;
+    }
+
+}
+

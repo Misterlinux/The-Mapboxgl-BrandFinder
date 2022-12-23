@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js"></script>
+
+  <!-- directions plugin and forward geocoder-->
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" type="text/css">
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">
+
+  <!-- for distance and drawing-->
+    <script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
+
+  <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    
+    <title>Document</title>
+
+</head>
+<body>
+
+  <div class="demo-wrap">
+    <img class="demo-bg pure-img" src="https://bit.ly/3jfZeRN">
+
+    <div class="demo-content text-center mx-auto">
+
+        <h1> Welcome to the Brandfinder </h1>
+        <p> Stradal directions for any brand you want, <b>with just one Tap</b> </p>  
+        
+        <input type="text" id="testo" placeholder="Insert your text here">
+        <div class="warning">
+          <div>
+            <p>*Drag with 2 fingers to Pitch on mobile</p>
+            <p>*Geolocator position may differ</p>
+          </div>
+        </div>
+        
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-12" id="mappa">
+        <div id="geoco"></div>
+      </div>
+
+      <div class="col-sm-3 p-2" id="content">
+      </div>
+
+    </div>
+  </div>
+
+<br>
+<br>
+
+<div class="footer text-center p-1 w-100 mt-2">
+  <div class="pure-u-1">
+      Application made with 
+      <a href="https://www.mapbox.com/mapbox-gljs">MapboxGL.js</a>
+      by 
+      <a href="https://github.com/Misterlinux?tab=repositories">Angelo Zarate</a>
+      , check more at his 
+      <a href="https://codepen.io/your-work">codepen</a>
+  </div>
+</div>
+
+<!-- more directions script -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+    <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+    <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+</html>
